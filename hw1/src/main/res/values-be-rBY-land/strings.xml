@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AndroidFirst</string>
+    <string name="country_name">Belarus FREEDOM</string>
+    <string name="play">PLAY</string>
+
+
+</resources>

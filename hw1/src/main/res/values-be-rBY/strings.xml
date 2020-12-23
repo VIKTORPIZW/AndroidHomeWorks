@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">AndroidFirst</string>
-    <string name="country_name">CountryName</string>
+    <string name="country_name">Belarus</string>
     <string name="play">PLAY</string>
+
 
 </resources>

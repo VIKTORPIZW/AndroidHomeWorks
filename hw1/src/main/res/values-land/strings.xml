@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AndroidFirst</string>
-    <string name="country_name">CountryName</string>
+    <string name="country_name">CountryName Horizontal</string>
     <string name="play">PLAY</string>
 
 </resources>
