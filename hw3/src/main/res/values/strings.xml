@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">HW3</string>
+    <string name="app_name">Android3HW</string>
+    <string name="Attractions">Attractions</string>
+    <string name="Dining">Dining</string>
+    <string name="Education">Education</string>
+    <string name="Family">Family</string>
+    <string name="Health">Health</string>
+    <string name="Office">Office</string>
+    <string name="Promotions">Promotions</string>
+    <string name="Radio">Radio</string>
+    <string name="Recipes">Recipes</string>
+    <string name="Sports">Sports</string>
 </resources>

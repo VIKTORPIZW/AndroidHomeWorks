@@ -1,18 +1,281 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:weightSum="10">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/Attractive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/documents_32px"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Attractions"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/dining_room_24px"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Dining"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/poison_24px"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Education"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/toilet_24px"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Family"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/doctors_bag_24px"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Health"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/office1"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Office"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/promot"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Promotions"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/radio_24px"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Radio"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/recipes"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Recipes"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <ImageView
+
+            android:gravity="center"
+            android:id="@+id/image9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/sport"
+            android:contentDescription="@string/Attractions">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/Sports"
+            android:textSize="30sp"
+            >
+
+        </TextView>
+    </TableRow>
+</TableLayout>
+
