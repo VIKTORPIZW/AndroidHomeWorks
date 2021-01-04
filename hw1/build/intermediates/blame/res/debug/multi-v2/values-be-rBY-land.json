@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\ASUS\\HW\\hw1\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be-rBY-land\\values-be-rBY-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\HW\\hw1\\src\\main\\res\\values-be-rBY-land\\strings.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "104,155,213",
+                        "endColumns": "49,56,37",
+                        "endOffsets": "149,207,246"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,105,162",
+                        "endColumns": "49,56,37",
+                        "endOffsets": "100,157,195"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\ASUS\\HW\\hw1\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de-rDE-land\\values-de-rDE-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\HW\\hw1\\src\\main\\res\\values-de-rDE-land\\strings.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,108,169",
+                        "endColumns": "49,59,37",
+                        "endOffsets": "102,163,202"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,105,165",
+                        "endColumns": "49,59,37",
+                        "endOffsets": "100,160,198"
+                    }
+                }
+            ]
+        }
+    ]
+}
