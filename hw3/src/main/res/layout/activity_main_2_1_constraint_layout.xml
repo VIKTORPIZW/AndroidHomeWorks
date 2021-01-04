@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:id="@+id/background_photo_grey"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/grey"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        >
+    </ImageView>
+    <TextView
+        android:id="@+id/text_photo_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"
+        android:text="@string/photo"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/background_photo_grey"
+        app:layout_constraintLeft_toLeftOf="@id/background_photo_grey"
+        app:layout_constraintTop_toTopOf="@id/background_photo_grey"
+        app:layout_constraintRight_toRightOf="@id/background_photo_grey">
+    </TextView>
+    <ImageView
+        android:id="@+id/image_photo_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:layout_constraintRight_toRightOf="@id/background_photo_grey"
+        app:layout_constraintBottom_toBottomOf="@id/background_photo_grey"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+    </ImageView>
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintTop_toBottomOf="@id/image_photo_camera"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+    </EditText>
+    <EditText
+        android:id="@+id/edit_text_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.3"
+        android:text="@string/price"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+    </EditText>
+    <EditText
+        android:id="@+id/edit_text_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.6"
+        android:text="@string/location"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_title"
+        app:layout_constraintLeft_toRightOf="@id/edit_text_price"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_title"
+        >
+    </EditText>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/locationmap"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_title"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_location">
+        
+    </ImageView>
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        app:layout_constraintStart_toStartOf="@id/edit_text_price"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_price"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_location"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edit_text_inventory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/inventory"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_description"
+        app:layout_constraintStart_toStartOf="@id/edit_text_description">
+
+    </EditText>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.3"
+        android:text="@string/weight"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_description"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_description">
+
+    </EditText>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
