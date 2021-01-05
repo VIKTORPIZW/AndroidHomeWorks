@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_sign_in_top_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="0dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edit_text_email_relative_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="@string/email"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        android:background="@drawable/edittext_round"
+        android:layout_below="@id/text_sign_in_top_relative_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp">
+
+
+    </EditText>
+    <EditText
+        android:id="@+id/edit_text_password_relative_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="@string/password"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        android:background="@drawable/edittext_round"
+        android:layout_below="@id/edit_text_email_relative_layout"
+        android:layout_centerInParent="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+    <CheckBox
+        android:id="@+id/checkbox_remember_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/edit_text_password_relative_layout"
+        android:layout_marginTop="30dp"
+        android:layout_alignStart="@id/edit_text_password_relative_layout">
+
+    </CheckBox>
+    <TextView
+        android:id="@+id/text_forgot_password_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/edit_text_password_relative_layout"
+        android:layout_alignEnd="@id/edit_text_password_relative_layout"
+        android:layout_marginTop="35dp"
+       >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/just_sign_in"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/text_forgot_password_relative_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dp">
+
+    </TextView>
+
+
+
+
+
+
+</RelativeLayout>
