@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/background_photo_grey_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/grey">
+
+    </View>
+    <TextView
+        android:id="@+id/text_photo_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo"
+        android:textSize="100sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/image_photo_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/background_photo_grey_relative_layout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        />
+    <EditText
+        android:id="@+id/edit_text_title_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_below="@id/background_photo_grey_relative_layout"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edit_text_price_relative_layout"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:layout_below="@id/edit_text_title_relative_layout"
+        android:layout_marginStart="15dp">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edit_text_location_relative_layout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:layout_below="@id/edit_text_title_relative_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp">
+
+    </EditText>
+    <ImageView
+        android:id="@+id/image_location_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/locationmap"
+        android:layout_below="@id/edit_text_title_relative_layout"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true">
+
+    </ImageView>
+    <EditText
+        android:id="@+id/edit_text_description_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_below="@id/edit_text_price_relative_layout"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        
+    </EditText>
+    <EditText
+        android:id="@+id/edit_text_inventory_relative_layout"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/inventory"
+        android:layout_below="@id/edit_text_description_relative_layout"
+        android:layout_marginStart="15dp">
+        
+    </EditText>
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:layout_below="@id/edit_text_description_relative_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp">
+        
+    </EditText>
+
+
+</RelativeLayout>
