@@ -66,6 +66,7 @@
 
     </CheckBox>
     <TextView
+        android:id="@+id/text_forgot_password_constraint_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forgot_password"
@@ -77,6 +78,7 @@
 
     </TextView>
     <TextView
+        android:id="@+id/text_just_sign_in_constraint_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/just_sign_in"
@@ -86,7 +88,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
-        
+
     </TextView>
 
 
