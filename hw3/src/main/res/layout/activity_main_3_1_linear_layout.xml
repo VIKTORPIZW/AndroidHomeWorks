@@ -32,7 +32,8 @@
         android:textStyle="bold"
         android:background="@drawable/edittext_round"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="20dp">
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp">
 
 
     </EditText>
@@ -46,7 +47,8 @@
         android:background="@drawable/edittext_round"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:paddingStart="20dp">
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp">
 
     </EditText>
 <LinearLayout
@@ -94,6 +96,6 @@
         android:textSize="15sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp">
-        
+
     </TextView>
 </LinearLayout>
