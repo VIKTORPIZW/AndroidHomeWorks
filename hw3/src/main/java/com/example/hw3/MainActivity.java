@@ -9,6 +9,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_3_3_relative_layout);
+        setContentView(R.layout.activity_main_4_1_linear_layout);
     }
 }
