@@ -15,19 +15,14 @@
         android:layout_marginStart="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
-
-    </TextView>
-
+        app:layout_constraintRight_toRightOf="parent"/>
     <ImageView
         android:id="@+id/image_photo_user"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/grey"
         app:layout_constraintStart_toStartOf="@id/text_android_constraint_layout"
-        app:layout_constraintTop_toBottomOf="@id/text_android_constraint_layout">
-
-    </ImageView>
+        app:layout_constraintTop_toBottomOf="@id/text_android_constraint_layout"/>
     <TextView
         android:id="@+id/text_count_of_posts_constraint_layout"
         android:layout_width="wrap_content"
@@ -38,9 +33,7 @@
         app:layout_constraintLeft_toRightOf="@id/image_photo_user"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="100dp"
-        android:layout_marginStart="30dp">
-
-    </TextView>
+        android:layout_marginStart="30dp"/>
     <TextView
         android:id="@+id/text_posts_constraint_layout"
         android:layout_width="wrap_content"
@@ -49,9 +42,7 @@
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/text_count_of_posts_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user"
-        android:layout_marginStart="25dp">
-
-    </TextView>
+        android:layout_marginStart="25dp"/>
     <TextView
         android:id="@+id/text_count_of_followers_constraint_layout"
         android:layout_width="wrap_content"
@@ -62,9 +53,7 @@
         app:layout_constraintLeft_toRightOf="@id/text_count_of_posts_constraint_layout"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="100dp"
-        android:layout_marginStart="50dp">
-
-    </TextView>
+        android:layout_marginStart="50dp"/>
     <TextView
         android:id="@+id/text_followers_constraint_layout"
         android:layout_width="wrap_content"
@@ -73,9 +62,7 @@
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/text_count_of_posts_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/text_posts_constraint_layout"
-        android:layout_marginStart="30dp">
-
-    </TextView>
+        android:layout_marginStart="30dp"/>
     <TextView
         android:id="@+id/text_count_of_following_constraint_layout"
         android:layout_width="wrap_content"
@@ -86,9 +73,7 @@
         app:layout_constraintLeft_toRightOf="@id/text_count_of_followers_constraint_layout"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="100dp"
-        android:layout_marginStart="55dp">
-
-    </TextView>
+        android:layout_marginStart="55dp"/>
     <TextView
         android:id="@+id/text_following_constraint_layout"
         android:layout_width="wrap_content"
@@ -97,9 +82,7 @@
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/text_count_of_following_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/text_followers_constraint_layout"
-        android:layout_marginStart="30dp">
-
-    </TextView>
+        android:layout_marginStart="30dp"/>
     <TextView
         android:id="@+id/text_username_constraint_layout"
         android:layout_width="wrap_content"
@@ -109,10 +92,7 @@
         android:textSize="17sp"
         android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@id/image_photo_user"
-        app:layout_constraintStart_toStartOf="@id/image_photo_user">
-
-    </TextView>
-
+        app:layout_constraintStart_toStartOf="@id/image_photo_user"/>
     <TextView
         android:id="@+id/text_address_constrain_layout"
         android:layout_width="wrap_content"
@@ -121,11 +101,7 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@id/text_username_constraint_layout"
-        app:layout_constraintTop_toBottomOf="@id/text_username_constraint_layout"
-        >
-
-    </TextView>
-
+        app:layout_constraintTop_toBottomOf="@id/text_username_constraint_layout"/>
     <TextView
         android:id="@+id/text_description_constraint_layout"
         android:layout_width="wrap_content"
@@ -134,9 +110,7 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@id/text_address_constrain_layout"
-        app:layout_constraintTop_toBottomOf="@id/text_address_constrain_layout">
-
-    </TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_address_constrain_layout"/>
     <ImageView
         android:id="@+id/image_photo_user_mini_1"
         android:layout_width="50dp"
@@ -144,9 +118,7 @@
         android:background="@color/grey"
         app:layout_constraintTop_toBottomOf="@id/text_description_constraint_layout"
         app:layout_constraintStart_toStartOf="@id/text_description_constraint_layout"
-        android:layout_marginTop="15dp">
-
-    </ImageView>
+        android:layout_marginTop="15dp"/>
     <ImageView
         android:id="@+id/image_photo_user_mini_2"
         android:layout_width="50dp"
@@ -155,9 +127,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_description_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user_mini_1"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp">
-
-    </ImageView>
+        android:layout_marginTop="15dp"/>
     <ImageView
         android:id="@+id/image_photo_user_mini_3"
         android:layout_width="50dp"
@@ -166,9 +136,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_description_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user_mini_2"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp">
-
-    </ImageView>
+        android:layout_marginTop="15dp"/>
     <ImageView
         android:id="@+id/image_photo_user_mini_4"
         android:layout_width="50dp"
@@ -177,9 +145,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_description_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user_mini_3"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp">
-
-    </ImageView>
+        android:layout_marginTop="15dp"/>
     <ImageView
         android:id="@+id/image_photo_user_mini_5"
         android:layout_width="50dp"
@@ -188,9 +154,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_description_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user_mini_4"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp">
-
-    </ImageView>
+        android:layout_marginTop="15dp"/>
     <ImageView
         android:id="@+id/image_photo_user_mini_6"
         android:layout_width="50dp"
@@ -199,10 +163,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_description_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user_mini_5"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp">
-
-    </ImageView>
-
+        android:layout_marginTop="15dp"/>
     <ImageView
         android:id="@+id/image_direction_constraint_layout"
         android:layout_width="wrap_content"
@@ -211,9 +172,7 @@
         app:layout_constraintTop_toBottomOf="@id/image_photo_user_mini_2"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginHorizontal="60dp"
-        android:layout_marginTop="30dp">
-    </ImageView>
-
+        android:layout_marginTop="30dp"/>
     <ImageView
         android:id="@+id/image_call_constrain_layout"
         android:layout_width="wrap_content"
@@ -222,9 +181,7 @@
         app:layout_constraintLeft_toRightOf="@id/image_direction_constraint_layout"
         app:layout_constraintTop_toBottomOf="@id/image_photo_user_mini_2"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="60dp">
-    </ImageView>
-
+        android:layout_marginStart="60dp"/>
     <ImageView
         android:id="@+id/image_save_constraint_layout"
         android:layout_width="wrap_content"
@@ -251,9 +208,7 @@
         android:text="@string/directions"
         app:layout_constraintTop_toBottomOf="@id/image_direction_constraint_layout"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="30dp">
-
-    </TextView>
+        android:layout_marginStart="30dp"/>
     <TextView
         android:id="@+id/text_call_constraint_layout"
         android:layout_width="wrap_content"
@@ -261,9 +216,7 @@
         android:text="@string/call"
         app:layout_constraintTop_toBottomOf="@id/image_call_constrain_layout"
         app:layout_constraintLeft_toRightOf="@id/text_direction_constraint_layout"
-        android:layout_marginStart="40dp">
-
-    </TextView>
+        android:layout_marginStart="40dp"/>
     <TextView
         android:id="@+id/text_save_constraint_layout"
         android:layout_width="wrap_content"
@@ -271,9 +224,7 @@
         android:text="@string/save"
         app:layout_constraintTop_toBottomOf="@id/image_save_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/text_call_constraint_layout"
-        android:layout_marginStart="60dp">
-
-    </TextView>
+        android:layout_marginStart="60dp"/>
     <TextView
         android:id="@+id/text_website_constraint_layout"
         android:layout_width="wrap_content"
@@ -281,9 +232,7 @@
         android:text="@string/website"
         app:layout_constraintTop_toBottomOf="@id/image_website_constraint_"
         app:layout_constraintLeft_toRightOf="@id/text_save_constraint_layout"
-        android:layout_marginStart="50dp">
-
-    </TextView>
+        android:layout_marginStart="50dp"/>
     <ImageView
         android:id="@+id/line_horizontal_constraint_layout"
         android:layout_width="match_parent"
@@ -291,9 +240,7 @@
         android:background="@drawable/line_horizontal"
         app:layout_constraintTop_toBottomOf="@id/text_direction_constraint_layout"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="30dp">
-
-    </ImageView>
+        android:layout_marginTop="30dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle"
         android:layout_width="105dp"
@@ -302,9 +249,7 @@
         app:layout_constraintTop_toBottomOf="@id/line_horizontal_constraint_layout"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp">
-
-    </ImageView>
+        android:layout_marginTop="30dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_2"
         android:layout_width="105dp"
@@ -313,9 +258,7 @@
         app:layout_constraintTop_toBottomOf="@id/line_horizontal_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user_middle"
         android:layout_marginStart="11.6dp"
-        android:layout_marginTop="30dp">
-
-    </ImageView>
+        android:layout_marginTop="30dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_3"
         android:layout_width="105dp"
@@ -324,9 +267,9 @@
         app:layout_constraintTop_toBottomOf="@id/line_horizontal_constraint_layout"
         app:layout_constraintLeft_toRightOf="@id/image_photo_user_middle_2"
         android:layout_marginStart="11.6dp"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"/>
 
-    </ImageView>
+
 
 
 

@@ -14,18 +14,15 @@
         android:textStyle="bold"
         android:layout_marginTop="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="0dp">
+        android:layout_marginEnd="0dp"/>
 
-    </TextView>
     <ImageView
         android:id="@+id/image_photo_user_top_relative_layout"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/grey"
         android:layout_below="@id/text_android_relative_layout"
-        android:layout_alignStart="@id/text_android_relative_layout">
-
-    </ImageView>
+        android:layout_alignStart="@id/text_android_relative_layout"/>
     <TextView
         android:id="@+id/text_count_of_posts_relative_layout"
         android:layout_width="wrap_content"
@@ -35,9 +32,7 @@
         android:textSize="15sp"
         android:textColor="@color/black"
         android:layout_marginTop="100dp"
-        android:layout_marginStart="30dp">
-
-    </TextView>
+        android:layout_marginStart="30dp"/>
     <TextView
         android:id="@+id/text_posts_relative_layout"
         android:layout_width="wrap_content"
@@ -47,9 +42,7 @@
         android:textColor="@color/black"
         android:layout_below="@id/text_count_of_posts_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_top_relative_layout"
-        android:layout_marginStart="25dp">
-
-    </TextView>
+        android:layout_marginStart="25dp"/>
     <TextView
         android:id="@+id/text_count_of_followers_relative_layout"
         android:layout_width="wrap_content"
@@ -59,9 +52,7 @@
         android:textColor="@color/black"
         android:layout_marginTop="100dp"
         android:layout_toEndOf="@id/text_count_of_posts_relative_layout"
-        android:layout_marginStart="50dp">
-
-    </TextView>
+        android:layout_marginStart="50dp"/>
     <TextView
         android:id="@+id/text_followers_relative_layout"
         android:layout_width="wrap_content"
@@ -71,9 +62,7 @@
         android:textSize="15sp"
         android:layout_below="@id/text_count_of_followers_relative_layout"
         android:layout_toEndOf="@id/text_posts_relative_layout"
-        android:layout_marginStart="30dp">
-
-    </TextView>
+        android:layout_marginStart="30dp"/>
     <TextView
         android:id="@+id/text_count_of_following_relative_layout"
         android:layout_width="wrap_content"
@@ -83,10 +72,7 @@
         android:textColor="@color/black"
         android:layout_marginTop="100dp"
         android:layout_toEndOf="@id/text_count_of_followers_relative_layout"
-        android:layout_marginStart="60dp">
-
-    </TextView>
-
+        android:layout_marginStart="60dp"/>
     <TextView
         android:id="@+id/text_following_relative_layout"
         android:layout_width="wrap_content"
@@ -96,9 +82,7 @@
         android:textSize="15sp"
         android:layout_below="@id/text_count_of_following_relative_layout"
         android:layout_toEndOf="@id/text_followers_relative_layout"
-        android:layout_marginStart="20dp">
-
-    </TextView>
+        android:layout_marginStart="20dp"/>
     <TextView
         android:id="@+id/text_username_relative_layout"
         android:layout_width="wrap_content"
@@ -108,9 +92,7 @@
         android:textSize="17sp"
         android:layout_below="@id/image_photo_user_top_relative_layout"
         android:layout_alignStart="@id/image_photo_user_top_relative_layout"
-        android:layout_marginTop="15dp">
-
-    </TextView>
+        android:layout_marginTop="15dp"/>
     <TextView
         android:id="@+id/text_address_relative_layout"
         android:layout_width="wrap_content"
@@ -119,9 +101,7 @@
         android:textSize="15sp"
         android:textColor="@color/black"
         android:layout_below="@id/text_username_relative_layout"
-        android:layout_alignStart="@id/text_username_relative_layout">
-
-    </TextView>
+        android:layout_alignStart="@id/text_username_relative_layout"/>
     <TextView
         android:id="@+id/text_description_relative_layout"
         android:layout_width="wrap_content"
@@ -130,10 +110,7 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         android:layout_below="@id/text_address_relative_layout"
-        android:layout_alignStart="@id/text_address_relative_layout">
-
-    </TextView>
-
+        android:layout_alignStart="@id/text_address_relative_layout"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_relative_layout"
         android:layout_width="50dp"
@@ -141,9 +118,7 @@
         android:background="@color/grey"
         android:layout_below="@id/text_description_relative_layout"
         android:layout_alignStart="@id/text_description_relative_layout"
-        android:layout_marginTop="15dp">
-
-    </ImageView>
+        android:layout_marginTop="15dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_2_relative_layout"
         android:layout_width="50dp"
@@ -152,9 +127,7 @@
         android:layout_below="@id/text_description_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_middle_relative_layout"
         android:layout_marginTop="15dp"
-        android:layout_marginStart="10dp">
-
-    </ImageView>
+        android:layout_marginStart="10dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_3_relative_layout"
         android:layout_width="50dp"
@@ -163,9 +136,7 @@
         android:layout_below="@id/text_description_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_middle_2_relative_layout"
         android:layout_marginTop="15dp"
-        android:layout_marginStart="10dp">
-
-    </ImageView>
+        android:layout_marginStart="10dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_4_relative_layout"
         android:layout_width="50dp"
@@ -174,9 +145,7 @@
         android:layout_below="@id/text_description_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_middle_3_relative_layout"
         android:layout_marginTop="15dp"
-        android:layout_marginStart="10dp">
-
-    </ImageView>
+        android:layout_marginStart="10dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_5_relative_layout"
         android:layout_width="50dp"
@@ -185,9 +154,7 @@
         android:layout_below="@id/text_description_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_middle_4_relative_layout"
         android:layout_marginTop="15dp"
-        android:layout_marginStart="10dp">
-
-    </ImageView>
+        android:layout_marginStart="10dp"/>
     <ImageView
         android:id="@+id/image_photo_user_middle_6_relative_layout"
         android:layout_width="50dp"
@@ -196,10 +163,7 @@
         android:layout_below="@id/text_description_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_middle_5_relative_layout"
         android:layout_marginTop="15dp"
-        android:layout_marginStart="10dp">
-
-    </ImageView>
-
+        android:layout_marginStart="10dp"/>
     <ImageView
         android:id="@+id/image_direction_relative_layout"
         android:layout_width="wrap_content"
@@ -207,19 +171,14 @@
         app:srcCompat="@android:drawable/ic_menu_directions"
         android:layout_below="@id/image_photo_user_middle_relative_layout"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="60dp">
-
-    </ImageView>
+        android:layout_marginStart="60dp"/>
     <TextView
         android:id="@+id/text_direction_relative_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/directions"
         android:layout_below="@id/image_direction_relative_layout"
-        android:layout_marginStart="35dp">
-
-    </TextView>
-
+        android:layout_marginStart="35dp"/>
     <ImageView
         android:id="@+id/image_call_relative_layout"
         android:layout_width="wrap_content"
@@ -228,9 +187,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="30dp"
         android:layout_toEndOf="@id/image_direction_relative_layout"
-        app:srcCompat="@android:drawable/ic_menu_call">
-
-    </ImageView>
+        app:srcCompat="@android:drawable/ic_menu_call"/>
     <TextView
         android:id="@+id/text_call_relative_layout"
         android:layout_width="wrap_content"
@@ -238,10 +195,7 @@
         android:text="@string/call"
         android:layout_below="@id/image_call_relative_layout"
         android:layout_toEndOf="@id/text_direction_relative_layout"
-        android:layout_marginStart="40dp">
-
-    </TextView>
-
+        android:layout_marginStart="40dp"/>
     <ImageView
         android:id="@+id/image_save_relative_layout"
         android:layout_width="wrap_content"
@@ -250,9 +204,7 @@
         android:layout_below="@id/image_photo_user_middle_4_relative_layout"
         android:layout_toEndOf="@id/image_call_relative_layout"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="60dp">
-
-    </ImageView>
+        android:layout_marginStart="60dp"/>
     <TextView
         android:id="@+id/text_save_relative_layout"
         android:layout_width="wrap_content"
@@ -260,10 +212,7 @@
         android:text="@string/save"
         android:layout_below="@id/image_save_relative_layout"
         android:layout_toEndOf="@id/text_call_relative_layout"
-        android:layout_marginStart="55dp">
-
-    </TextView>
-
+        android:layout_marginStart="55dp"/>
     <ImageView
         android:id="@+id/image_website_relative_layout"
         android:layout_width="wrap_content"
@@ -272,9 +221,7 @@
         android:layout_below="@id/image_photo_user_middle_6_relative_layout"
         android:layout_toEndOf="@id/image_save_relative_layout"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="60dp">
-
-    </ImageView>
+        android:layout_marginStart="60dp"/>
     <TextView
         android:id="@+id/text_website_relative_layout"
         android:layout_width="wrap_content"
@@ -282,18 +229,14 @@
         android:text="@string/website"
         android:layout_below="@id/image_website_relative_layout"
         android:layout_toEndOf="@id/text_save_relative_layout"
-        android:layout_marginStart="50dp">
-
-    </TextView>
+        android:layout_marginStart="50dp"/>
     <ImageView
         android:id="@+id/line_horizontal_relative_layout"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@drawable/line_horizontal"
         android:layout_below="@id/text_save_relative_layout"
-        android:layout_marginTop="20dp">
-
-    </ImageView>
+        android:layout_marginTop="20dp"/>
     <ImageView
         android:id="@+id/image_photo_user_low_1"
         android:layout_width="105dp"
@@ -301,9 +244,7 @@
         android:background="@color/grey"
         android:layout_below="@id/line_horizontal_relative_layout"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp">
-
-    </ImageView>
+        android:layout_marginStart="30dp"/>
     <ImageView
         android:id="@+id/image_photo_user_low_2"
         android:layout_width="105dp"
@@ -312,9 +253,7 @@
         android:layout_below="@id/line_horizontal_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_low_1"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="11.6dp">
-
-    </ImageView>
+        android:layout_marginStart="11.6dp"/>
     <ImageView
         android:id="@+id/image_photo_user_low_3"
         android:layout_width="105dp"
@@ -323,22 +262,5 @@
         android:layout_below="@id/line_horizontal_relative_layout"
         android:layout_toEndOf="@id/image_photo_user_low_2"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="11.6dp">
-
-    </ImageView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        android:layout_marginStart="11.6dp"/>
 </RelativeLayout>
