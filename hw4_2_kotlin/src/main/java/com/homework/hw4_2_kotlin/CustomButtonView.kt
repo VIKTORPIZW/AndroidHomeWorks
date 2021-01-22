@@ -210,7 +210,7 @@ class CustomButtonView(context: Context, attrs: AttributeSet) :
             }
             invalidate()
         } else if (event.action == MotionEvent.ACTION_DOWN) {
-            xyOfClick = "Мимо =)"
+            xyOfClick = "Нет попадания"
             colorOfClick = colorN13
             invalidate()
         }
@@ -220,16 +220,8 @@ class CustomButtonView(context: Context, attrs: AttributeSet) :
     fun coordinates() = xyOfClick
     fun getColorOfClick() = colorOfClick
 
-    override fun onSaveInstanceState(): Parcelable? {
-        val bundle = Bundle()
-        bundle.putInt("firstQuarterColor", colorOfFirstPart)
-        bundle.putInt("secondQuarterColor", colorOfSecondPart)
-        bundle.putInt("thirdQuarterColor", colorOfThirdPart)
-        bundle.putInt("fourthQuarterColor", colorOfFourthPart)
-        bundle.putParcelable("superState", super.onSaveInstanceState())
-        return bundle
     }
-    }
+
 
 
 
