@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="miniCustomButtonView">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="colorOfCenter">@color/color_7</item>
+        <item name="borderWidth">1dp</item>
+        <item name="colorOfBorder">@color/color_6</item>
+    </style>
+</resources>
