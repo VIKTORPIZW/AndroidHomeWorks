@@ -69,7 +69,7 @@ class CustomButtonView(context: Context, attrs: AttributeSet) :
     private var centerY: Float = 0.0f
     private var colorOfClick: Int = 0
     private var borderWidth = WIDTH_BORDER
-    private var size = 640
+    private var size = 620
 
     init {
         paint.isAntiAlias = true
