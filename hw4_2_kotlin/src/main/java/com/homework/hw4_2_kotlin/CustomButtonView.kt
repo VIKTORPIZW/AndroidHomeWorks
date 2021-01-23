@@ -5,8 +5,6 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
-import android.os.Bundle
-import android.os.Parcelable
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
@@ -21,16 +19,6 @@ interface ICustomListener {
 
 class CustomButtonView(context: Context, attrs: AttributeSet) :
         View(context, attrs) {
-    companion object {
-        private const val COLOR_OF_FIRST_PART = Color.GREEN
-        private const val COLOR_OF_SECOND_PART = Color.YELLOW
-        private const val COLOR_OF_THIRD_PART = Color.BLUE
-        private const val COLOR_OF_FOURTH_PART = Color.RED
-        private const val COLOR_OF_CENTER = Color.WHITE
-        private const val COLOR_OF_BORDER = Color.BLACK
-        private const val WIDTH_BORDER = 1.0f
-    }
-
     var customListener: ICustomListener? = null
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
     private var colorN1 = ContextCompat.getColor(context, R.color.color_1)
@@ -65,6 +53,15 @@ class CustomButtonView(context: Context, attrs: AttributeSet) :
             colorN12,colorN13,colorN14,colorN15,colorN16,colorN17,colorN18,
             colorN19,colorN20
     )
+    companion object {
+        private const val COLOR_OF_FIRST_PART = Color.GREEN
+        private const val COLOR_OF_SECOND_PART = Color.YELLOW
+        private const val COLOR_OF_THIRD_PART = Color.BLUE
+        private const val COLOR_OF_FOURTH_PART = Color.RED
+        private const val COLOR_OF_CENTER = Color.WHITE
+        private const val COLOR_OF_BORDER = Color.BLACK
+        private const val WIDTH_BORDER = 1.0f
+    }
 
     private var radiusOfClick = 0f
     private var xyOfClick: String? = null
