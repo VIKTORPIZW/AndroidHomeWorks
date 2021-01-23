@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Название приложения</string>
+    <string name="textTop">Выбрать формат отображения!</string>
+
+</resources>

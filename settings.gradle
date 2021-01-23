@@ -1,2 +1,3 @@
+include ':hw4_2_kotlin'
 include ':app'
 rootProject.name = "HW"
