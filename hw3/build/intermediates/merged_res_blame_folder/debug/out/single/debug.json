@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_4_2_constraint_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_4_2_constraint_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_recipes.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\recipes.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_doctors_bag_24px.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\doctors_bag_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_dining_room_24px.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\dining_room_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_poison_24px.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\poison_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_office1.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\office1.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_promot.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\promot.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_3_1_linear_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_3_1_linear_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_office.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\office.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_2_1_linear_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_2_1_linear_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_1_2.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_1_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_toilet_24px.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\toilet_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_locationmap.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\locationmap.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_radio_24px.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\radio_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_edittext_round.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\edittext_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_2_1_constraint_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_2_1_constraint_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_shadow_for_view.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\shadow_for_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_3_2_constraint_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_3_2_constraint_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_button_round.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\button_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_3_3_relative_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_3_3_relative_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_5_1_constraint_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_5_1_constraint_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_sport.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\sport.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_line_horizontal.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\line_horizontal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_like_image.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\like_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_save_image.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\save_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_documents_32px.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\documents_32px.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable_share_image.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\drawable\\share_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_2_1_relative_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_2_1_relative_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_4_1_linear_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_4_1_linear_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_4_3_relative_layout.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\layout\\activity_main_4_3_relative_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Computer\\StudioProjects\\AndroidHomeWorks\\hw3\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    }
+]
