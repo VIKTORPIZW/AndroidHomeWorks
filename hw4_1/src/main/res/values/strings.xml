@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">HW4_1</string>
+    <string name="app_name">HW4_1_Rework</string>
+    <string name="contact_name">Name</string>
+    <string name="contact_info">+3751112233</string>
+    <string name="contact_add">Add contact</string>
+    <string name="Phone_number">Phone number</string>
+    <string name="Email">Email</string>
+    <string name="Edit_contact">Edit contact</string>
+    <string name="Remove">Remove</string>
+    <string name="okItemInActionBar">OkItemInActionBar</string>
+    <string name="backItemOnActionBar">backItemOnActionBar</string>
+    <string name="search">search</string>
+    <string name="contactInfo">contact info</string>
+    <string name="contactImage">contact image</string>
 </resources>
