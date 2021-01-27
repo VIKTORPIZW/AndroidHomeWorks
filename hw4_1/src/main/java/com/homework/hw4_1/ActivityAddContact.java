@@ -1,11 +1,12 @@
-package com.homework.hw4_1_rework;
+package com.homework.hw4_1;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import com.homework.hw4_1_rework.R;
 
 public class ActivityAddContact extends MainActivity {
     private RadioButton phoneButton;
@@ -28,7 +29,7 @@ public class ActivityAddContact extends MainActivity {
         infoView = findViewById(R.id.editTextViewInfo);
 
         findViewById(R.id.toolbarBackButton).setOnClickListener(v -> {
-            setResult(Activity.RESULT_CANCELED);
+            setResult(RESULT_CANCELED);
             finish();
         });
 
@@ -47,7 +48,7 @@ public class ActivityAddContact extends MainActivity {
                                 InfoType.EMAIL));
                 resultIntent.putExtra(NEW_CONTACT, "Contact added");
             }
-            setResult(Activity.RESULT_OK, resultIntent);
+            setResult(RESULT_OK, resultIntent);
             finish();
             nameView.setText("");
             infoView.setText("");

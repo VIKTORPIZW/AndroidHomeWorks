@@ -1,9 +1,10 @@
-package com.homework.hw4_1_rework;
+package com.homework.hw4_1;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.homework.hw4_1_rework.R;
 
 public class ActivityEditContact extends MainActivity {
     private TextView nameView;
@@ -34,14 +35,14 @@ public class ActivityEditContact extends MainActivity {
                             infoView.getText().toString(),
                             contact.getInfoType()));
             resultIntent.putExtra(MODIFIED_CONTACT, "Contact was changed");
-            setResult(Activity.RESULT_OK, resultIntent);
+            setResult(RESULT_OK, resultIntent);
             finish();
             nameView.setText("");
             infoView.setText("");
         });
 
         findViewById(R.id.toolbarEditBackButton).setOnClickListener(v -> {
-            setResult(Activity.RESULT_CANCELED);
+            setResult(RESULT_CANCELED);
             finish();
         });
 

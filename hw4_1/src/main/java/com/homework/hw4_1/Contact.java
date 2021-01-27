@@ -1,8 +1,10 @@
-package com.homework.hw4_1_rework;
+package com.homework.hw4_1;
 
 import android.os.Build;
 
 import androidx.annotation.RequiresApi;
+
+import com.homework.hw4_1_rework.R;
 
 import java.util.Objects;
 

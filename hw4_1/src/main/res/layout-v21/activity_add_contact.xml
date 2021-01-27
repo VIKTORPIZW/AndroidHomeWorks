@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical">
 
     <Toolbar style="@style/Toolbar">
@@ -31,7 +30,6 @@
                 style="@style/ToolbarViews"
                 android:layout_gravity="end|center"
                 android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
                 app:srcCompat="@drawable/ic_baseline_done_24" />
         </FrameLayout>
     </Toolbar>
@@ -46,8 +44,8 @@
             android:id="@+id/PhoneButton"
             style="@style/MainStyle"
             android:layout_marginTop="20dp"
-            android:checked="true"
-            android:text="@string/Phone_number" />
+            android:text="@string/Phone_number"
+            android:checked="true"/>
 
         <RadioButton
             android:id="@+id/EmailButton"

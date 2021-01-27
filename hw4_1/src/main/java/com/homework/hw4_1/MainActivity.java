@@ -1,4 +1,4 @@
-package com.homework.hw4_1_rework;
+package com.homework.hw4_1;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.homework.hw4_1_rework.R;
 
 public class MainActivity extends AppCompatActivity {
     public static final String NEW_CONTACT = "NewContact";

@@ -1,4 +1,4 @@
-package com.homework.hw4_1_rework;
+package com.homework.hw4_1;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.homework.hw4_1_rework.R;
 
 import java.util.ArrayList;
 import java.util.List;

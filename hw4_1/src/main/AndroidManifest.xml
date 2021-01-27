@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HW4_1_Rework">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.homework.hw4_1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityAddContact"/>
-        <activity android:name=".ActivityEditContact"/>
+        <activity android:name="com.homework.hw4_1.ActivityAddContact"/>
+        <activity android:name="com.homework.hw4_1.ActivityEditContact"/>
     </application>
 
 </manifest>
