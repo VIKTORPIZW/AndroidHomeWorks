@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shadow2">
+
+    <TextView
+        android:id="@+id/working_progress_text_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:textSize="12sp"
+        app:drawableTopCompat="@drawable/ic_baseline_construction_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486"
+        tools:text="working progress" />
+
+    <TextView
+        android:id="@+id/work_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="work name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/work_date_item"
+        app:layout_constraintStart_toEndOf="@+id/working_progress_text_item"/>
+
+    <TextView
+        android:id="@+id/work_date_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="date"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/work_name_item"
+        app:layout_constraintStart_toEndOf="@id/working_progress_text_item"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/work_price_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="price"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/currency_work_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/currency_item"
+        app:layout_constraintEnd_toStartOf="@id/work_price_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

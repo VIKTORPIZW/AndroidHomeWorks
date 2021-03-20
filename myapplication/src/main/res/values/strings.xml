@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">homework6_1</string>
+    <string name="car_list">Car list</string>
+    <string name="no_cars_added">No cars added</string>
+    <string name="add_car">Add car</string>
+    <string name="no_works_added">No works added</string>
+    <string name="car_photo">Car photo</string>
+    <string name="edit_car">Edit car</string>
+    <string name="no_photo">No photo</string>
+    <string name="owner_name">Owner name</string>
+    <string name="producer">Producer</string>
+    <string name="model">Model</string>
+    <string name="car_info">Car info</string>
+    <string name="add_work">Add work</string>
+    <string name="application_date">Application date -</string>
+    <string name="work_name">Work name</string>
+    <string name="work_cost">Cost ($)</string>
+    <string name="description">Description</string>
+    <string name="work_pending">pending</string>
+    <string name="work_in_progress">in progress</string>
+    <string name="work_completed">completed</string>
+    <string name="arrow_forward">arrow forward</string>
+    <string name="delete_work">Delete work</string>
+    <string name="search">Search</string>
+    <string name="plate_number">Plate number</string>
+    <string name="fields_check_add_work">Please fill in all fields</string>
+    <string name="dialog_delete_work_message">Are you sure you want to delete work?</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+    <string name="currency_item">$</string>
+    <string name="all_works">All works</string>
 </resources>

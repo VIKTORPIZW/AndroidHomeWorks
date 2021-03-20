@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app6_1task</string>
+    <string name="job_progress">job progress</string>
+    <string name="all_works">Works</string>
+    <string name="currency_item">currency</string>
+    <string name="no_works_added">No Works added</string>
+</resources>
