@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Car list</string>
+
+    <!--content description strings-->
+    <string name="add_photo">add photo</string>
+    <string name="search">search</string>
+    <string name="edit_car_info">edit car info</string>
+    <string name="button_back">button back</string>
+    <string name="work_status">work status</string>
+    <string name="button_apply">button apply</string>
+    <string name="pending">pending</string>
+    <string name="arrow_forward">arrow forward</string>
+    <string name="in_progress">in progress</string>
+    <string name="completed">completed</string>
+    <string name="button_delete_work">button delete work</string>
+    <!---->
+
+    <string name="add_car">Add car</string>
+    <string name="add_work">Add work</string>
+    <string name="no_cars_added">No cars added</string>
+    <string name="no_works_added">No works added</string>
+    <string name="no_photo">No photo</string>
+    <string name="owner_name">Owner name</string>
+    <string name="producer">Producer</string>
+    <string name="model">Model</string>
+    <string name="plate_number">Plate number</string>
+    <string name="car_list">Car list</string>
+
+    <string name="car_info">Car info</string>
+    <string name="car_photo">Car photo</string>
+
+    <string name="car_with_this_number_already_exists">A car with this number already exists</string>
+    <string name="all_fields_must_be_filled">All fields must be filled</string>
+
+    <string name="filter_by_in_progress">Filter by in progress</string>
+    <string name="filter_by_pending">Filter by pending</string>
+    <string name="filter_by_completed">Filter by completed</string>
+    <string name="work_name">Work name</string>
+    <string name="cost">Cost ($)</string>
+    <string name="description">Description</string>
+    <string name="application_date">Application date %1$s</string>
+    <string name="warning">Warning!</string>
+    <string name="are_you_sure_wont_to_delete_work">Are you sure you want to delete work?</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="show_all">Show all</string>
+
+
+
+</resources>
