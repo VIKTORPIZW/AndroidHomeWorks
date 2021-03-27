@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">homework11</string>
+    <string name="menu_sort_time">Sort by time</string>
+    <string name="menu_sort_date">Sort by date</string>
+    <string name="logs">Logs</string>
+
+</resources>
