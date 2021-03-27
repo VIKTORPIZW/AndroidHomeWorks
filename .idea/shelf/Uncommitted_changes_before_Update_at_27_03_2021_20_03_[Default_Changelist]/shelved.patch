@@ -1,0 +1,33 @@
+Index: hw7_coroutines/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/counters.tab
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- hw7_coroutines/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/counters.tab	(date 1616833415732)
++++ hw7_coroutines/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/counters.tab	(date 1616833415732)
+@@ -0,0 +1,2 @@
++17
++0
+\ No newline at end of file
+Index: hw7_1/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- hw7_1/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab	(date 1616804706582)
++++ hw7_1/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab	(date 1616804706582)
+@@ -0,0 +1,2 @@
++17
++0
+\ No newline at end of file
+Index: hw7_completablefuture/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- hw7_completablefuture/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab	(date 1616832139430)
++++ hw7_completablefuture/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab	(date 1616832139430)
+@@ -0,0 +1,2 @@
++17
++0
+\ No newline at end of file
