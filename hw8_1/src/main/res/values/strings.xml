@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">app8.1task</string>
+
+    <string name="search_contacts">Search contacts</string>
+    <string name="no_contacts_please_add">No contacts. Please add</string>
+    <string name="add_new_contact">Add new contact</string>
+    <string name="contact">Contact</string>
+
+    <string name="add_contact">Add contact</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email address</string>
+
+    <string name="edit_contact">Edit contact</string>
+    <string name="remove">Remove</string>
+</resources>
