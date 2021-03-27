@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Car list</string>
+
+    <!--content description strings-->
+    <string name="add_photo">Добавить фото</string>
+    <string name="search">поиск</string>
+    <string name="edit_car_info">Редактировать информацию об автомобиле</string>
+    <string name="button_back">кнопка назад</string>
+    <string name="work_status">статус работы</string>
+    <string name="button_apply">кнопка применить</string>
+    <string name="pending">в ожидании</string>
+    <string name="arrow_forward">стрелка вперёд</string>
+    <string name="in_progress">в процессе выполнения</string>
+    <string name="completed">выполнено</string>
+    <string name="button_delete_work">кнопка удалить работу</string>
+    <!---->
+
+    <string name="add_car">Добавить автомобиль</string>
+    <string name="add_work">Добавить работу</string>
+    <string name="no_cars_added">Автомобилей не добавлено</string>
+    <string name="no_works_added">Работ не добавлено</string>
+    <string name="no_photo">Нет фото</string>
+    <string name="owner_name">Имя владельца</string>
+    <string name="producer">Производитель</string>
+    <string name="model">Модель</string>
+    <string name="plate_number">Номерной знак</string>
+    <string name="car_list">Список автомобилей</string>
+
+    <string name="car_info">Информация об автомобиле</string>
+    <string name="car_photo">Фото автомобиля</string>
+
+    <string name="car_with_this_number_already_exists">Автомобиль с таким номером уже существует</string>
+    <string name="all_fields_must_be_filled">Все поля должны быть заполнены</string>
+
+    <string name="filter_by_in_progress">Фильтровать по «в процессе»</string>
+    <string name="filter_by_pending">Фильтровать по «в ожидании»</string>
+    <string name="filter_by_completed">Фильтровать по "выполнено"</string>
+    <string name="show_all">Показать все</string>
+    <string name="work_name">Название работы</string>
+    <string name="cost">Цена ($)</string>
+    <string name="description">Описание</string>
+    <string name="application_date">Дата установки %1$s</string>
+    <string name="warning">Внимание!</string>
+    <string name="are_you_sure_wont_to_delete_work">Вы действительно хотите удалить работу?</string>
+    <string name="ok">Ок</string>
+    <string name="error">Ошибка</string>
+
+
+</resources>

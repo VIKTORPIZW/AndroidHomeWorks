@@ -1,3 +1,6 @@
+include ':hw7_coroutines'
+include ':hw7_rxjava'
+include ':hw7_completablefuture'
 include ':hw7_1'
 include ':app'
 rootProject.name = "HW"

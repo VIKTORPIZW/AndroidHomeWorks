@@ -13,6 +13,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/hw7_1" />
+            <option value="$PROJECT_DIR$/hw7_completablefuture" />
+            <option value="$PROJECT_DIR$/hw7_coroutines" />
+            <option value="$PROJECT_DIR$/hw7_rxjava" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
