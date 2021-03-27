@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">homework9</string>
+    <string name="change_city">Change city</string>
+    <string name="icon_weather_center">Weather center</string>
+    <string name="arrow_back">Arrow back</string>
+    <string name="choose_city">Choose the city</string>
+    <string name="check_icon">Check icon</string>
+    <string name="city_name">City name</string>
+    <string name="enter_city">Enter city name</string>
+    <string name="dialog_title">Please put the city name</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="fab_description">Fab button choose city fragment</string>
+    <string name="marked_city_key">MARKED_CITY</string>
+    <string name="marked_city_default_key">DEFAULT_KEY</string>
+
+
+</resources>
