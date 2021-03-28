@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageViewCar"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border_top"
+        android:backgroundTint="@color/grey"
+        android:layout_margin="20dp"/>
+    <ImageView
+        android:id="@+id/buttonPanelView"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="@id/imageViewCar"
+        app:layout_constraintEnd_toEndOf="@id/imageViewCar"
+        app:layout_constraintTop_toBottomOf="@id/imageViewCar"
+        android:background="@drawable/border_bottom"/>
+    <TextView
+        android:id="@+id/nameMaster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/buttonPanelView"
+        app:layout_constraintTop_toTopOf="@id/buttonPanelView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey_title_text"
+        android:textSize="20sp"
+        tools:text="Harry"/>
+    <TextView
+        android:id="@+id/producerAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/nameMaster"
+        app:layout_constraintTop_toBottomOf="@id/nameMaster"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/grey_little_text"
+        tools:text="Ford"/>
+    <TextView
+        android:id="@+id/modelAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/producerAuto"
+        app:layout_constraintTop_toBottomOf="@id/nameMaster"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/grey_little_text"
+        tools:text="Ford"/>
+    <TextView
+        android:id="@+id/numberCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/borderNumberCar"
+        app:layout_constraintTop_toTopOf="@id/borderNumberCar"
+        app:layout_constraintBottom_toBottomOf="@id/borderNumberCar"
+        app:layout_constraintStart_toStartOf="@id/borderNumberCar"
+        android:textColor="@color/grey_title_text"
+        tools:text="1111 BB-7"/>
+    <ImageView
+        android:id="@+id/borderNumberCar"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@id/buttonPanelView"
+        app:layout_constraintTop_toTopOf="@id/buttonPanelView"
+        app:layout_constraintBottom_toBottomOf="@id/buttonPanelView"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_number_car"/>
+    <ImageButton
+        android:id="@+id/buttonClickEditCar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@id/imageViewCar"
+        app:layout_constraintTop_toTopOf="@id/imageViewCar"
+        android:background="@drawable/circle"
+        android:layout_margin="20dp"
+        android:padding="3dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:tint="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.homework6_1
+package by.andrei.firstproject.homework_6_1_car
 
 import org.junit.Test
 

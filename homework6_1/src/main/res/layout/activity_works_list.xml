@@ -9,7 +9,7 @@
         android:id="@+id/toolbar_work_list"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/dark_grey"
+        android:background="@color/purple_700"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:text="@string/no_works_added"
         android:textSize="24sp"
-        android:textColor="@color/light_grey"
+        android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

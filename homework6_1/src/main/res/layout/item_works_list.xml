@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/viewWorkInWorkList"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_number_car"/>
+    <ImageView
+        android:id="@+id/statusWorkInWorkList"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_construction_24"
+        app:layout_constraintStart_toStartOf="@id/viewWorkInWorkList"
+        app:layout_constraintTop_toTopOf="@id/viewWorkInWorkList"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/textStatusInWorkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:text="completed"
+
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/statusWorkInWorkList"
+        app:layout_constraintEnd_toEndOf="@id/statusWorkInWorkList"
+        app:layout_constraintTop_toBottomOf="@id/statusWorkInWorkList"/>
+    <TextView
+        android:id="@+id/nameWorkInWorkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:text="Engine swap"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/textStatusInWorkList"
+        app:layout_constraintTop_toTopOf="@id/viewWorkInWorkList"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/dateWorkInWorkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:text="20.12.2020"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/nameWorkInWorkList"
+        app:layout_constraintBottom_toBottomOf="@id/textStatusInWorkList"/>
+    <TextView
+        android:id="@+id/costInWorkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:text="3000"
+
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/viewWorkInWorkList"
+        app:layout_constraintEnd_toEndOf="@id/viewWorkInWorkList"
+        app:layout_constraintBottom_toBottomOf="@id/viewWorkInWorkList"
+        android:layout_marginEnd="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

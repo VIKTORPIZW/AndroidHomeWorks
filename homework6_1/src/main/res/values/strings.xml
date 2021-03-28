@@ -1,32 +1,74 @@
 <resources>
-    <string name="app_name">homework6_1</string>
-    <string name="car_list">Car list</string>
-    <string name="no_cars_added">No cars added</string>
-    <string name="add_car">Add car</string>
-    <string name="no_works_added">No works added</string>
-    <string name="car_photo">Car photo</string>
-    <string name="edit_car">Edit car</string>
-    <string name="no_photo">No photo</string>
-    <string name="owner_name">Owner name</string>
-    <string name="producer">Producer</string>
-    <string name="model">Model</string>
-    <string name="car_info">Car info</string>
-    <string name="add_work">Add work</string>
-    <string name="application_date">Application date -</string>
-    <string name="work_name">Work name</string>
-    <string name="work_cost">Cost ($)</string>
-    <string name="description">Description</string>
-    <string name="work_pending">pending</string>
-    <string name="work_in_progress">in progress</string>
-    <string name="work_completed">completed</string>
-    <string name="arrow_forward">arrow forward</string>
-    <string name="delete_work">Delete work</string>
-    <string name="search">Search</string>
-    <string name="plate_number">Plate number</string>
-    <string name="fields_check_add_work">Please fill in all fields</string>
-    <string name="dialog_delete_work_message">Are you sure you want to delete work?</string>
-    <string name="dialog_cancel">Cancel</string>
-    <string name="dialog_ok">OK</string>
-    <string name="currency_item">$</string>
+    <!--Total-->
+    <string name="app_name">Homework-6-1-car</string>
+    <string name="pending_status">pending</string>
+    <string name="in_progress_status">in progress</string>
+    <string name="completed_status">completed</string>
+    <string name="progress_pending">pending</string>
+    <string name="progress_in_progress">in progress</string>
+    <string name="progress_completed">completed</string>
+    <!--Main activity-->
+    <string name="title_main_activity">Car list</string>
+    <string name="background_text_in_main_activity">No cars added</string>
+    <string name="content_description_search_button">Search</string>
+    <string name="content_description_add_car_button">Add new car</string>
+    <!--Work activity-->
+    <string name="content_description_button_back_to_car_list">Back to car list</string>
+    <string name="content_description_add_work_button">Add new work</string>
+    <!--Add new work activity-->
+    <string name="content_description_button_back_to_work_list">Back to work list</string>
+    <string name="title_add_work_activity">Add work</string>
+    <string name="content_description_check_add_work_button">Confirm</string>
+    <string name="application_date_header">Application date - </string>
+    <string name="work_name_header_add_work">Work name</string>
+    <string name="cost_header_add_work">Cost ($)</string>
+    <string name="hint_work_name_add_work">Enter the type of work</string>
+    <string name="hint_cost_add_work">Cost</string>
+    <string name="description_header_add_work">Description</string>
+    <string name="hint_description_add_work">Enter description</string>
+    <string name="text_status_pending_add_work">pending</string>
+    <string name="text_status_in_progress_add_work">in progress</string>
+    <string name="text_status_completed_add_work">completed</string>
+    <!--Edit work activity-->
+    <string name="content_description_check_edit_work_button">Confirm</string>
+    <string name="content_description_delete_edit_work_button">Confirm deleted</string>
+    <string name="application_date_header_edit_work">Application date - </string>
+    <string name="work_name_header_edit_work">Work name</string>
+    <string name="cost_header_edit_work">Cost ($)</string>
+    <string name="hint_work_name_edit_work">Enter the type of work</string>
+    <string name="hint_cost_edit_work">Cost</string>
+    <string name="description_header_edit_work">Description</string>
+    <string name="hint_description_edit_work">Enter description</string>
+    <string name="text_status_pending_edit_work">pending</string>
+    <string name="text_status_in_progress_edit_work">in progress</string>
+    <string name="text_status_completed_edit_work">completed</string>
+    <!--Add new car-->
+    <string name="title_add_new_car_activity">Add car</string>
+    <string name="content_description_check_add_car_button">Confirm add new car</string>
+    <string name="background_text_image_car_add_car">No photo</string>
+    <string name="content_description_make_photo_button">Make photo</string>
+    <string name="owner_name_header_add_car">Owner name</string>
+    <string name="producer_header_add_car">Producer</string>
+    <string name="model_header_add_car">Model</string>
+    <string name="plate_number_header_add_car">Plate number</string>
+    <string name="hint_owner_name_add_car">Enter name</string>
+    <string name="hint_producer_add_car">Enter producer</string>
+    <string name="hint_model_add_car">Enter model</string>
+    <string name="hint_plate_number_add_car">Enter plate number</string>
+    <!--Edit car-->
+    <string name="title_edit_new_car_activity">Car info</string>
+    <string name="content_description_check_edit_car_button">Confirm edit car</string>
+    <string name="content_description_change_photo_button">Change photo</string>
+    <string name="background_text_image_car_edit_car">No photo</string>
+    <string name="owner_name_header_edit_car">Owner name</string>
+    <string name="producer_header_edit_car">Producer</string>
+    <string name="model_header_edit_car">Model</string>
+    <string name="plate_number_header_edit_car">Plate number</string>
+    <string name="hint_owner_name_edit_car">Enter name</string>
+    <string name="hint_producer_edit_car">Enter producer</string>
+    <string name="hint_model_edit_car">Enter model</string>
+    <string name="hint_plate_number_edit_car">Enter plate number</string>
     <string name="all_works">All works</string>
+    <string name="no_works_added">No works added</string>
+    <string name="currency_item">Currency</string>
 </resources>
