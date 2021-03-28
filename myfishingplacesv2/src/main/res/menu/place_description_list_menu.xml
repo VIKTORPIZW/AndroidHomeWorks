@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbarSearchPlaceDescriptionList"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+
+    <item
+        android:id="@+id/menu_sort_by_normal_bite"
+        android:title="@string/filter_by_in_normal_bite" />
+    <item
+        android:id="@+id/menu_sort_by_bad_bite"
+        android:title="@string/filter_by_bad_bite" />
+
+    <item
+        android:id="@+id/menu_sort_by_good_bite"
+        android:title="@string/filter_by_good_bite" />
+    <item
+        android:id="@+id/menu_show_all"
+        android:title="@string/show_all" />
+
+</menu>
