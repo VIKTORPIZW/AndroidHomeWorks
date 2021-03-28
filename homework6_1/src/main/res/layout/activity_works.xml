@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarWorkListActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey_header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/backButtonWorkListActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@null"
+                android:tint="@color/white"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/content_description_button_back_to_car_list" />
+            <TextView
+                android:id="@+id/nameCarWorkListActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                tool:text = "Ford"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_toEndOf="@id/backButtonWorkListActivity"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/numberCarWorkListActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                tool:text = "1111 AT-1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_toEndOf="@id/backButtonWorkListActivity"
+                android:layout_below="@id/nameCarWorkListActivity"
+                android:layout_marginStart="20dp"/>
+            <ImageButton
+                android:id="@+id/searchButtonWorkListActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_search_24"
+                android:background="@null"
+                android:tint="@color/white"
+                android:contentDescription="@string/content_description_search_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewWorksAtTheCar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarWorkListActivity"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/worksFloatingButtonAddWorks"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:padding="15dp"
+        android:foreground="@drawable/ic_baseline_work_24"
+        android:foregroundTint="@color/white"
+        android:foregroundGravity="center"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/content_description_add_work_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

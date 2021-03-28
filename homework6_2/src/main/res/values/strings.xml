@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">homework6_2</string>
+    <string name="all_works">All works</string>
+    <string name="arrow_back">Back</string>
+    <string name="full_image">Full image</string>
+    <string name="item_image">Item image</string>
+
+</resources>
