@@ -65,8 +65,8 @@ class AddPlaceDescriptionFragment : Fragment(R.layout.fragment_add_place_descrip
                 val description = editTextDescription.text.toString()
                 ioScope.launch {
                     if (roadToWater.isNotEmpty() && distance.isNotEmpty() && description.isNotEmpty()) {
-                        val workItem = PlaceDescriptionItem(date, roadToWater, description, distance.toFloat(), fishingStatus, fishSpecies)
-                        databasePlaceDescriptionRepository.addPlaceDescription(workItem)
+                        val placeDescriptionItem = PlaceDescriptionItem(date, roadToWater, description, distance.toFloat(), fishingStatus, fishSpecies)
+                        databasePlaceDescriptionRepository.addPlaceDescription(placeDescriptionItem)
                         returnToPlaceDescriptionListFragment(bundleOf("place_description_List" to arguments?.get("placeItem")))
                     } else {
                         Snackbar.make(buttonApply, getString(R.string.all_fields_must_be_filled), Snackbar.LENGTH_SHORT).show()
