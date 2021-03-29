@@ -6,10 +6,8 @@
     android:background="@drawable/background5"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
     <androidx.appcompat.widget.Toolbar
-app:menu="@menu/place_description_list_menu"
+        app:menu="@menu/place_description_list_menu"
         android:id="@+id/toolbarPlaceDescriptionList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,11 +15,9 @@ app:menu="@menu/place_description_list_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/buttonBack"
                 android:layout_width="wrap_content"
@@ -32,7 +28,6 @@ app:menu="@menu/place_description_list_menu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
                 android:id="@+id/textViewInToolbarLocality"
                 android:layout_width="wrap_content"
@@ -42,9 +37,7 @@ app:menu="@menu/place_description_list_menu"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/buttonBack"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Ford" />
-
+                app:layout_constraintTop_toTopOf="parent" />
             <TextView
                 android:id="@+id/textViewInToolbarFishingType"
                 android:layout_width="wrap_content"
@@ -54,9 +47,7 @@ app:menu="@menu/place_description_list_menu"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/textViewInToolbarLocality"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Mustang" />
-
+                app:layout_constraintTop_toTopOf="parent" />
             <TextView
                 android:id="@+id/textViewInToolbarDistance"
                 android:layout_width="wrap_content"
@@ -65,13 +56,9 @@ app:menu="@menu/place_description_list_menu"
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/buttonBack"
-                app:layout_constraintTop_toBottomOf="@+id/textViewInToolbarLocality"
-                tools:text="1111 BB-4" />
-
-
+                app:layout_constraintTop_toBottomOf="@+id/textViewInToolbarLocality" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPlaceDescriptionList"
         android:layout_width="match_parent"
@@ -80,7 +67,6 @@ app:menu="@menu/place_description_list_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarPlaceDescriptionList" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButtonAddPlaceDescription"
         android:layout_width="wrap_content"
@@ -93,7 +79,6 @@ app:menu="@menu/place_description_list_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="24dp" />
-
     <TextView
         android:id="@+id/textViewNoPlaceDescriptionsAdded"
         android:layout_width="wrap_content"

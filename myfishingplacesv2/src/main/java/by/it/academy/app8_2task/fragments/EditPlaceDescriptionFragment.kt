@@ -23,7 +23,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class EditPlaceDescriptionFragment : Fragment(R.layout.fragment_edit_place_description) {
-
     private lateinit var buttonBack: ImageButton
     private lateinit var buttonDeletePlaceDescription: ImageButton
     private lateinit var buttonApply: ImageButton
@@ -41,15 +40,12 @@ class EditPlaceDescriptionFragment : Fragment(R.layout.fragment_edit_place_descr
     private lateinit var ioScope: CoroutineScope
     private lateinit var placeDescriptionItem: PlaceDescriptionItem
     private var fishingStatus: Int = ImageButtonBadBiteCode
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         setHasOptionsMenu(true)
         return super.onCreateView(inflater, container, savedInstanceState)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         with(view) {
             buttonBack = findViewById(R.id.buttonBack)
             buttonDeletePlaceDescription = findViewById(R.id.buttonDeletePlaceDescription)
@@ -62,17 +58,12 @@ class EditPlaceDescriptionFragment : Fragment(R.layout.fragment_edit_place_descr
             imageButtonNormalBite = findViewById(R.id.imageButtonNormalBite)
             imageButtonGoodBite = findViewById(R.id.imageButtonGoodBite)
             customViewFishingStatus = findViewById(R.id.customViewFishingStatus)
-
             databasePlaceDescriptionRepository = DatabasePlaceDescriptionRepository(context)
             ioScope = CoroutineScope(Dispatchers.IO)
             getIntentDataAndSetInfoToEditTexts()
-
             customViewFishingStatus.customClickListenerSetFishingStatus = { status -> fishingStatus = status }
-
             buttonBack.setOnClickListener { returnToPlaceDescriptionListFragment(bundleOf("placeDescriptionList" to arguments?.get("placeItem"))) }
-
             buttonDeletePlaceDescription.setOnClickListener { alertDialogDeletePlaceDescription() }
-
             buttonApply.setOnClickListener {
                 val roadToWater= editTextRoadToWater.text.toString()
                 val distance = editTextDistance.text.toString()
@@ -89,22 +80,18 @@ class EditPlaceDescriptionFragment : Fragment(R.layout.fragment_edit_place_descr
             }
         }
     }
-
     override fun onStart() {
         super.onStart()
         (activity as AppCompatActivity).supportActionBar?.hide()
     }
-
     override fun onStop() {
         super.onStop()
         (activity as AppCompatActivity).supportActionBar?.show()
     }
-
     private fun alertDialogDeletePlaceDescription() {
         val context = context
         if (context != null) {
             val alertDialog = AlertDialog.Builder(context)
-
             with(alertDialog) {
                 setTitle(R.string.warning)
                 setMessage(R.string.are_you_sure_wont_to_delete_place_description)
@@ -119,9 +106,7 @@ class EditPlaceDescriptionFragment : Fragment(R.layout.fragment_edit_place_descr
                 show()
             }
         }
-
     }
-
     private fun returnToPlaceDescriptionListFragment(bundle: Bundle) {
         parentFragmentManager.commit {
             addToBackStack(null)
@@ -130,7 +115,6 @@ class EditPlaceDescriptionFragment : Fragment(R.layout.fragment_edit_place_descr
             replace(R.id.mainContainer, PlaceDescriptionListFragment::class.java, bundle)
         }
     }
-
     private fun getIntentDataAndSetInfoToEditTexts() {
         placeDescriptionItem = (arguments?.get("placeDescriptionItem")
                 ?: PlaceDescriptionItem("", "", "", 0F, 0, "")) as PlaceDescriptionItem
@@ -142,6 +126,5 @@ class EditPlaceDescriptionFragment : Fragment(R.layout.fragment_edit_place_descr
         editTextDescription.setText(placeDescriptionItem.description)
         fishingStatus = placeDescriptionItem.fishingStatus
         fishSpecies = placeDescriptionItem.fishSpecies
-
     }
 }

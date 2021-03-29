@@ -31,7 +31,6 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_description_list) {
-
     private lateinit var placeDescriptionItemAdapter: PlaceDescriptionAdapter
     private var placeItem: PlaceItem? = null
     private lateinit var recycleView: RecyclerView
@@ -46,15 +45,12 @@ class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_descriptio
     private lateinit var textViewInToolbarFishingType: TextView
     private lateinit var fishSpecies: String
     private lateinit var list: Deferred<MutableList<PlaceDescriptionItem>>
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         setHasOptionsMenu(true)
         return super.onCreateView(inflater, container, savedInstanceState)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         with(view) {
             recycleView = findViewById(R.id.recyclerViewPlaceDescriptionList)
             buttonBack = findViewById(R.id.buttonBack)
@@ -65,19 +61,14 @@ class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_descriptio
             floatingActionButton = findViewById(R.id.floatingActionButtonAddPlaceDescription)
             toolbar = findViewById(R.id.toolbarPlaceDescriptionList)
             placeDescriptionItemAdapter = PlaceDescriptionAdapter(mutableListOf())
-
             setPlaceInfoInToolbarTextViews()
-
             buttonBack.setOnClickListener {
                 returnToPlaceListFragment()
             }
             databasePlaceDescriptionRepository = DatabasePlaceDescriptionRepository(context)
             mainScope = CoroutineScope(Dispatchers.Main + Job())
-
             recycleView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-
             setValuesInAdapter()
-
             floatingActionButton.setOnClickListener {
                 parentFragmentManager.commit {
                     setReorderingAllowed(true)
@@ -85,26 +76,19 @@ class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_descriptio
                     addToBackStack(null)
                     replace(R.id.mainContainer, AddPlaceDescriptionFragment::class.java, bundleOf("placePlate" to placeItem?.fishSpecies, "placeItem" to placeItem))
                 }
-
             }
             placeDescriptionItemAdapter.onPlaceDescriptionItemClickListener = {
-
                 parentFragmentManager.commit {
                     addToBackStack(null)
                     setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     setReorderingAllowed(true)
                     replace(R.id.mainContainer, EditPlaceDescriptionFragment::class.java, bundleOf("placeDescriptionItem" to it, "placeItem" to placeItem))
                 }
-
             }
         }
     }
-
-
     override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater) {
-
         menuInflater.inflate(R.menu.place_description_list_menu, menu)
-
         val searchView = menu.findItem(R.id.toolbarSearchPlaceDescriptionList)?.actionView as SearchView
         searchView.apply {
             imeOptions = EditorInfo.IME_ACTION_DONE
@@ -112,35 +96,25 @@ class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_descriptio
                 override fun onQueryTextSubmit(query: String?): Boolean {
                     return false
                 }
-
                 override fun onQueryTextChange(newText: String?): Boolean {
                     placeDescriptionItemAdapter.filter.filter(newText)
                     return false
                 }
-
             })
         }
     }
-
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         mainScope.launch {
             when (item.itemId) {
                 R.id.menu_sort_by_bad_bite -> list = mainScope.async { databasePlaceDescriptionRepository.getFilteredPlaceDescriptionListByPlaceDescriptionType(fishSpecies, 1) }
-
                 R.id.menu_sort_by_normal_bite -> list = mainScope.async { databasePlaceDescriptionRepository.getFilteredPlaceDescriptionListByPlaceDescriptionType(fishSpecies, 2) }
-
                 R.id.menu_sort_by_good_bite -> list = mainScope.async { databasePlaceDescriptionRepository.getFilteredPlaceDescriptionListByPlaceDescriptionType(fishSpecies, 3) }
-
                 R.id.menu_show_all -> setValuesInAdapter()
-
             }
             setValuesInAdapterUsingList(list.await())
         }
         return super.onOptionsItemSelected(item)
     }
-
-
     private fun setPlaceInfoInToolbarTextViews() {
         placeItem = arguments?.get("placeDescriptionList") as PlaceItem
         textViewInToolbarLocality.text = placeItem?.locality ?: ""
@@ -148,12 +122,10 @@ class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_descriptio
         fishSpecies = placeItem?.fishSpecies ?: ""
         textViewInToolbarFishingType.text = fishSpecies
     }
-
     private fun setValuesInAdapterUsingList(list: MutableList<PlaceDescriptionItem>) {
         mainScope.launch {
             placeDescriptionItemAdapter = PlaceDescriptionAdapter(list)
             recycleView.adapter = placeDescriptionItemAdapter
-
             placeDescriptionItemAdapter.onPlaceDescriptionItemClickListener = {
                 parentFragmentManager.commit {
                     addToBackStack(null)
@@ -161,20 +133,15 @@ class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_descriptio
                     setReorderingAllowed(true)
                     replace(R.id.mainContainer, EditPlaceDescriptionFragment::class.java, bundleOf("placeDescriptionItem" to it, "placeItem" to placeItem))
                 }
-
             }
             visibilityOfTextViewNoPlaces()
         }
     }
-
     private fun setValuesInAdapter() {
         mainScope.launch {
-
             placeDescriptionItemAdapter = PlaceDescriptionAdapter(databasePlaceDescriptionRepository.getPlaceDescriptionList(fishSpecies))
             recycleView.adapter = placeDescriptionItemAdapter
-
             placeDescriptionItemAdapter.onPlaceDescriptionItemClickListener = {
-
                 parentFragmentManager.commit {
                     addToBackStack(null)
                     setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
@@ -185,16 +152,13 @@ class PlaceDescriptionListFragment : Fragment(R.layout.fragment_place_descriptio
             visibilityOfTextViewNoPlaces()
         }
     }
-
     private fun visibilityOfTextViewNoPlaces() {
-
         textViewNoPlaceDescriptionsAdded.visibility = if (placeDescriptionItemAdapter.itemCount == 0) {
             View.VISIBLE
         } else {
             View.INVISIBLE
         }
     }
-
     private fun returnToPlaceListFragment() {
         parentFragmentManager.commit {
             setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)

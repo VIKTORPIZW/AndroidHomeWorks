@@ -25,9 +25,12 @@
                 android:background="@color/my"
                 android:contentDescription="@string/place_photo"
                 android:src="@drawable/ic_camera"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/fishSpecies"
+                app:layout_constraintVertical_bias="1.0" />
 
             <ImageButton
                 android:id="@+id/editPlaceInfo"
@@ -38,57 +41,57 @@
                 android:contentDescription="@string/edit_place_info"
                 android:src="@drawable/ic_edit_info"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/placePhoto" />
 
             <TextView
                 android:id="@+id/placeName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/placePhoto"
-                tools:text="Samuel" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/placeLocality"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
-
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/placeName"
-                tools:text="Ford" />
+                />
 
             <TextView
                 android:id="@+id/placeFishingType"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
-                android:paddingBottom="16dp"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/placeLocality"
-                app:layout_constraintTop_toBottomOf="@+id/placeName"
-                tools:text="Mustang" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/placeLocality"
+                />
 
 
             <TextView
                 android:id="@+id/fishSpecies"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:gravity="center"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/placePhoto"
-                tools:text="1111 bb-7" />
+                app:layout_constraintTop_toBottomOf="@+id/placeFishingType" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </FrameLayout>

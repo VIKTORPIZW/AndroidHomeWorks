@@ -25,7 +25,6 @@ const val ImageButtonNormalBiteCode = 2
 const val ImageButtonGoodBiteCode = 3
 
 class AddPlaceDescriptionFragment : Fragment(R.layout.fragment_add_place_description) {
-
     private lateinit var buttonBack: ImageButton
     private lateinit var buttonApply: ImageButton
     private lateinit var textViewApplicationDate: TextView
@@ -41,10 +40,8 @@ class AddPlaceDescriptionFragment : Fragment(R.layout.fragment_add_place_descrip
     private lateinit var ioScope: CoroutineScope
     private lateinit var fishingStatusCustomView: FishingStatusCustomView
     private var fishingStatus: Int = ImageButtonBadBiteCode
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         with(view) {
             buttonBack = findViewById(R.id.buttonBack)
             buttonApply = findViewById(R.id.buttonApply)
@@ -56,24 +53,18 @@ class AddPlaceDescriptionFragment : Fragment(R.layout.fragment_add_place_descrip
             imageButtonNormalBite = findViewById(R.id.imageButtonNormalBite)
             imageButtonGoodBite = findViewById(R.id.imageButtonGoodBite)
             fishingStatusCustomView = findViewById(R.id.customViewFishingStatus)
-
             databasePlaceDescriptionRepository = DatabasePlaceDescriptionRepository(context)
             ioScope = CoroutineScope(Dispatchers.IO)
             fishSpecies = arguments?.getString("fishSpecies").toString()
-
             setCurrentDateInTextView()
-
             fishingStatusCustomView.customClickListenerSetFishingStatus = { status -> fishingStatus = status }
-
             buttonBack.setOnClickListener { returnToPlaceDescriptionListFragment(bundleOf("place_description_List" to arguments?.get("placeItem"))) }
-
             buttonApply.setOnClickListener {
                 val roadToWater = editTextRoadToWater.text.toString()
                 val distance = editTextDistance.text.toString()
                 val description = editTextDescription.text.toString()
                 ioScope.launch {
                     if (roadToWater.isNotEmpty() && distance.isNotEmpty() && description.isNotEmpty()) {
-
                         val workItem = PlaceDescriptionItem(date, roadToWater, description, distance.toFloat(), fishingStatus, fishSpecies)
                         databasePlaceDescriptionRepository.addPlaceDescription(workItem)
                         returnToPlaceDescriptionListFragment(bundleOf("place_description_List" to arguments?.get("placeItem")))
@@ -84,17 +75,14 @@ class AddPlaceDescriptionFragment : Fragment(R.layout.fragment_add_place_descrip
             }
         }
     }
-
     override fun onStart() {
         super.onStart()
         (activity as AppCompatActivity).supportActionBar?.hide()
     }
-
     override fun onStop() {
         super.onStop()
         (activity as AppCompatActivity).supportActionBar?.show()
     }
-
     private fun returnToPlaceDescriptionListFragment(bundle: Bundle) {
         parentFragmentManager.commit {
             addToBackStack(null)
@@ -103,12 +91,9 @@ class AddPlaceDescriptionFragment : Fragment(R.layout.fragment_add_place_descrip
             replace(R.id.mainContainer, PlaceDescriptionListFragment::class.java, bundle)
         }
     }
-
     private fun setCurrentDateInTextView() {
         date = getCurrentDate()
         val dateForTextView = getString(R.string.application_date, date)
         textViewApplicationDate.text = dateForTextView
     }
-
-
 }

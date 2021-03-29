@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background4"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background3"
+    android:id="@+id/root"
+    android:layout_height="match_parent">
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarEditPlaceDescription"
+        android:id="@+id/toolbarPlaceDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/primary"
@@ -14,11 +15,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
+            <ImageButton
+                android:id="@+id/buttonDeletePlaceDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                android:backgroundTint="@color/primary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/buttonApply"
+                app:layout_constraintEnd_toEndOf="parent"/>
             <ImageButton
                 android:id="@+id/buttonBack"
                 android:layout_width="wrap_content"
@@ -29,70 +37,54 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
-                android:id="@+id/textViewRoadToWater"
+                android:id="@+id/textViewActivityName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:text="@string/add_place_description"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/buttonBack"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="@string/road_to_water" />
-
-            <ImageButton
-                android:id="@+id/buttonDeletePlaceDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:background="@color/primary"
-                android:contentDescription="@string/button_delete_place_description"
-                android:src="@drawable/ic_delete"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/buttonApply"
                 app:layout_constraintTop_toTopOf="parent" />
-
-
             <ImageButton
                 android:id="@+id/buttonApply"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/primary"
                 android:contentDescription="@string/button_apply"
+                android:foregroundGravity="left"
                 android:src="@drawable/ic_baseline_check_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
-
     <TextView
         android:id="@+id/textViewApplicationDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
         android:text="@string/application_date"
-        android:textColor="@color/black"
+        android:textColor="@color/my"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarEditPlaceDescription"
+        app:layout_constraintTop_toBottomOf="@+id/customViewFishingStatus"
         tools:text="Application date - 31.12.2020" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutRoadToWater"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:hint="@string/road_to_water"
-        app:layout_constraintEnd_toStartOf="@+id/textInputLayoutDistance"
-        app:layout_constraintHorizontal_weight="3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewApplicationDate">
-
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDistance">
         <EditText
             android:id="@+id/editTextRoadToWater"
             android:layout_width="match_parent"
@@ -100,20 +92,18 @@
             android:autofillHints="@string/road_to_water"
             android:hint="@string/road_to_water"
             android:inputType="text" />
-
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutDistance"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/distance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/textInputLayoutRoadToWater"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewApplicationDate">
-
         <EditText
             android:id="@+id/editTextDistance"
             android:layout_width="match_parent"
@@ -122,20 +112,17 @@
             android:hint="@string/distance"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/description"
         app:boxStrokeColor="@color/accent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRoadToWater">
-
         <EditText
             android:id="@+id/editTextDescription"
             android:layout_width="match_parent"
@@ -144,13 +131,11 @@
             android:hint="@string/description"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <by.it.academy.app8_2task.customview.FishingStatusCustomView
         android:id="@+id/customViewFishingStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPlaceDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>

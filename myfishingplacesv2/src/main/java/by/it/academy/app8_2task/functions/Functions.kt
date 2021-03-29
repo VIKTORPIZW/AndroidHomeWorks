@@ -20,7 +20,6 @@ fun createDirectory(applicationContext: Context): File? {
     }
     return null
 }
-
 fun saveImage(photo: Bitmap, imageView: ImageView, placePictureDirectory: File): String {
     val path = "photo_${System.currentTimeMillis()}.jpg"
     val pathToPicture = "${placePictureDirectory.path}/${path}"
@@ -33,9 +32,7 @@ fun saveImage(photo: Bitmap, imageView: ImageView, placePictureDirectory: File):
     stream.close()
     return pathToPicture
 }
-
 fun Date.parseToString(): String = SimpleDateFormat.getDateInstance().format(this)
-
 fun getCurrentDate(): String {
     return Date().parseToString()
 }

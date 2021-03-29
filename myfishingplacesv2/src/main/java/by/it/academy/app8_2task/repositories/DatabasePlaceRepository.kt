@@ -8,15 +8,11 @@ import kotlinx.coroutines.withContext
 
 
 class DatabasePlaceRepository(context: Context) {
-
     private val dao = DatabasePlaces.init(context)
-
     suspend fun getAllPlacesSortedByLocality() = withContext(Dispatchers.IO) { dao.getPlaceDatabaseDAO().getAllPlacesSorted() }
-
     suspend fun addPlace(placeItem: PlaceItem) {
         withContext(Dispatchers.IO) { dao.getPlaceDatabaseDAO().addPlaceToDatabase(placeItem) }
     }
-
     suspend fun updatePlace(placeItem: PlaceItem) {
         withContext(Dispatchers.IO) { dao.getPlaceDatabaseDAO().updatePlace(placeItem) }
     }

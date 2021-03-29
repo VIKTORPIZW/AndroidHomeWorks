@@ -11,19 +11,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         writeDateToLogFile()
         showPlaceListFragment()
-
     }
-
     private fun showPlaceListFragment() {
         supportFragmentManager
                 .beginTransaction()
                 .add(R.id.mainContainer, PlaceListFragment())
                 .setReorderingAllowed(true).commit()
     }
-
     private fun writeDateToLogFile() {
         val dateTimeInstance = SimpleDateFormat.getDateTimeInstance()
 

@@ -30,27 +30,22 @@ import java.lang.Exception
 private const val PHOTO_CODE_REQUEST = 10
 
 class EditPlaceFragment:Fragment(R.layout.fragment_edit_place) {
-
     private lateinit var currentPhotoPath: String
     private lateinit var placePhotoImageView: ImageView
     private var pathImage: String? = null
     private var newPhotoLoaded = false
     private lateinit var databasePlaceRepository: DatabasePlaceRepository
     private lateinit var ioScope: CoroutineScope
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         with(view){
             val editTextPlaceName = findViewById<EditText>(R.id.editTextPlaceName)
             val editTextLocality = findViewById<EditText>(R.id.editTextLocality)
             val editTextFishingType = findViewById<EditText>(R.id.editTextFishingType)
             val editTextFishSpecies = findViewById<EditText>(R.id.editTextFishSpecies)
             placePhotoImageView = findViewById(R.id.placePhoto)
-
             databasePlaceRepository = DatabasePlaceRepository(context)
             ioScope = CoroutineScope(Dispatchers.IO + Job())
-
             val place: PlaceItem? = arguments?.getParcelable("carItem")
             if (place != null) {
                 with(place) {
@@ -63,12 +58,9 @@ class EditPlaceFragment:Fragment(R.layout.fragment_edit_place) {
                     }
                 }
             }
-
             findViewById<ImageButton>(R.id.buttonBack).setOnClickListener { finishActivity() }
-
             findViewById<ImageButton>(R.id.buttonApply).setOnClickListener {
                 if (place != null) {
-
                     val ownerName = editTextPlaceName.text.toString()
                     val producer = editTextLocality.text.toString()
                     val model = editTextFishingType.text.toString()
@@ -97,19 +89,16 @@ class EditPlaceFragment:Fragment(R.layout.fragment_edit_place) {
                     }
                 }
             }
-
             findViewById<FloatingActionButton>(R.id.addPhoto).setOnClickListener {
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
                 startActivityForResult(intent, PHOTO_CODE_REQUEST)
             }
         }
-
     }
     override fun onStart() {
         super.onStart()
         (activity as AppCompatActivity).supportActionBar?.hide()
     }
-
     override fun onStop() {
         super.onStop()
         (activity as AppCompatActivity).supportActionBar?.show()
@@ -125,11 +114,9 @@ class EditPlaceFragment:Fragment(R.layout.fragment_edit_place) {
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-
         data?.extras?.get("data").run {
             currentPhotoPath = context?.let { createDirectory(it)?.let { saveImage(this as Bitmap, placePhotoImageView, it) }.toString() }.toString()
             newPhotoLoaded = true
-
         }
     }
 }

@@ -3,7 +3,6 @@
     android:id="@+id/workStatusCustomView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
     <ImageButton
         android:id="@+id/imageButtonBadBite"
         android:layout_width="wrap_content"
@@ -12,7 +11,6 @@
         android:background="@color/white"
         android:contentDescription="@string/bad_bite"
         android:src="@drawable/fish3" />
-
     <ImageView
         android:id="@+id/imageViewArrowForward1"
         android:layout_width="wrap_content"
@@ -21,7 +19,6 @@
         android:layout_weight="1"
         android:contentDescription="@string/arrow_forward"
         android:src="@drawable/ic_baseline_arrow_forward_24" />
-
     <ImageButton
         android:id="@+id/imageButtonNormalBite"
         android:layout_width="wrap_content"
@@ -30,7 +27,6 @@
         android:background="@color/white"
         android:contentDescription="@string/normal_bite"
         android:src="@drawable/fish2" />
-
     <ImageView
         android:id="@+id/imageViewArrowForward2"
         android:layout_width="wrap_content"
@@ -39,7 +35,6 @@
         android:layout_weight="1"
         android:contentDescription="@string/arrow_forward"
         android:src="@drawable/ic_baseline_arrow_forward_24" />
-
     <ImageButton
         android:id="@+id/imageButtonGoodBite"
         android:layout_width="wrap_content"
@@ -48,5 +43,4 @@
         android:background="@color/white"
         android:contentDescription="@string/good_bite"
         android:src="@drawable/fish1" />
-
 </LinearLayout>

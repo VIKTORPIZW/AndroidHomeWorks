@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background1">
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarAddPlace"
         android:layout_width="0dp"
@@ -15,12 +14,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-
             <ImageButton
                 android:id="@+id/buttonBack"
                 android:layout_width="wrap_content"
@@ -31,7 +27,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
                 android:id="@+id/textViewActivityName"
                 android:layout_width="wrap_content"
@@ -44,7 +39,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/buttonBack"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <ImageButton
                 android:id="@+id/buttonApply"
                 android:layout_width="wrap_content"
@@ -58,7 +52,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
-
     <ImageView
         android:id="@+id/placePhoto"
         android:layout_width="match_parent"
@@ -67,8 +60,8 @@
         android:contentDescription="@string/place_photo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarAddPlace" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
     <TextView
         android:id="@+id/noPhotoText"
         android:layout_width="wrap_content"
@@ -80,7 +73,6 @@
         app:layout_constraintEnd_toEndOf="@+id/placePhoto"
         app:layout_constraintStart_toStartOf="@+id/placePhoto"
         app:layout_constraintTop_toTopOf="@+id/placePhoto" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/buttonAddPhoto"
         android:layout_width="wrap_content"
@@ -93,24 +85,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/placePhoto"
         app:maxImageSize="28dp" />
-
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/placeNameInputLayout"
         android:background="@color/my"
         style="@style/textInputLayoutStyle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         app:boxStrokeColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placePhoto">
-
-
+        app:layout_constraintEnd_toStartOf="@id/fishSpeciesTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@id/toolbarAddPlace" >
         <EditText
-
             android:id="@+id/editTextPlaceName"
             style="@style/textInputLayoutStyle"
             android:layout_width="match_parent"
@@ -118,12 +104,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:autofillHints="@string/place_name"
-
             android:hint="@string/place_name"
             android:inputType="text"
             app:boxStrokeColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/localityTextInput"
         android:background="@color/my"
@@ -134,7 +118,6 @@
         app:layout_constraintEnd_toStartOf="@+id/fishingTypeTextInputLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/placeNameInputLayout">
-
         <EditText
             android:id="@+id/editTextLocality"
             android:layout_width="match_parent"
@@ -143,9 +126,7 @@
             android:autofillHints="@string/locality"
             android:hint="@string/locality"
             android:inputType="text" />
-
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fishingTypeTextInputLayout"
         android:background="@color/my"
@@ -155,7 +136,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/localityTextInput"
         app:layout_constraintTop_toBottomOf="@+id/placeNameInputLayout">
-
         <EditText
             android:id="@+id/editTextFishingType"
             android:layout_width="match_parent"
@@ -165,17 +145,16 @@
             android:hint="@string/fishing_type"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+        android:id="@+id/fishSpeciesTextInputLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/my"
         android:layout_marginTop="24dp"
         app:hintTextColor="@color/accent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/localityTextInput">
-
+        app:layout_constraintStart_toEndOf="@id/placeNameInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAddPlace">
         <EditText
             android:id="@+id/editTextFishSpecies"
             android:background="@color/my"
@@ -186,7 +165,5 @@
             android:hint="@string/fish_species"
             android:inputType="text"
             app:boxStrokeColor="@color/black" />
-
     </com.google.android.material.textfield.TextInputLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

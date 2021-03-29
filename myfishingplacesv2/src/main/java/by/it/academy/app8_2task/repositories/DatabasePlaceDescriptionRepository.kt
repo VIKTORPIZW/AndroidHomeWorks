@@ -8,25 +8,19 @@ import kotlinx.coroutines.withContext
 
 
 class DatabasePlaceDescriptionRepository(context: Context) {
-
     private val dao = DatabasePlaces.init(context)
-
     suspend fun getPlaceDescriptionList(fishSpecies: String) = withContext(Dispatchers.IO) {
         dao.getPlaceDescriptionListDatabaseDAO().getPlaceDescriptionList(fishSpecies)
     }
-
     suspend fun addPlaceDescription(placeDescriptionItem: PlaceDescriptionItem) {
         withContext(Dispatchers.IO) { dao.getPlaceDescriptionListDatabaseDAO().addPlaceDescription(placeDescriptionItem) }
     }
-
     suspend fun updatePlaceDescription(placeDescriptionItem: PlaceDescriptionItem) {
         withContext(Dispatchers.IO) { dao.getPlaceDescriptionListDatabaseDAO().updatePlaceDescription(placeDescriptionItem) }
     }
-
     suspend fun deletePlaceDescription(placeDescriptionItem: PlaceDescriptionItem) {
         withContext(Dispatchers.IO) { dao.getPlaceDescriptionListDatabaseDAO().deletePlaceDescription(placeDescriptionItem) }
     }
-
     suspend fun getFilteredPlaceDescriptionListByPlaceDescriptionType(fishSpecies: String, fishingStatus: Int) = withContext(Dispatchers.IO) {
         dao.getPlaceDescriptionListDatabaseDAO().getFilteredPlaceDescriptionListByPlaceDescriptionType(fishSpecies, fishingStatus)
     }

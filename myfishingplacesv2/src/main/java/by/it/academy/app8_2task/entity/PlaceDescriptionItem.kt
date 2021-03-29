@@ -22,9 +22,7 @@ class PlaceDescriptionItem(
             parcel.readFloat(),
             parcel.readInt(),
             parcel.readString().toString(),
-            parcel.readLong()) {
-    }
-
+            parcel.readLong())
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(applicationDate)
         parcel.writeString(roadToWater)
@@ -34,16 +32,13 @@ class PlaceDescriptionItem(
         parcel.writeString(fishSpecies)
         parcel.writeLong(id)
     }
-
     override fun describeContents(): Int {
         return 0
     }
-
     companion object CREATOR : Parcelable.Creator<PlaceDescriptionItem> {
         override fun createFromParcel(parcel: Parcel): PlaceDescriptionItem {
             return PlaceDescriptionItem(parcel)
         }
-
         override fun newArray(size: Int): Array<PlaceDescriptionItem?> {
             return arrayOfNulls(size)
         }

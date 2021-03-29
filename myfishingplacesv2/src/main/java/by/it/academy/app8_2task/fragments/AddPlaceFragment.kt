@@ -43,10 +43,8 @@ class AddPlaceFragment : Fragment(R.layout.fragment_add_place) {
     private lateinit var databasePlaceRepository: DatabasePlaceRepository
     private lateinit var ioScope: CoroutineScope
     private lateinit var currentPhotoPath: String
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         with(view) {
             placeNameText = findViewById(R.id.editTextPlaceName)
             localityText = findViewById(R.id.editTextLocality)
@@ -57,13 +55,10 @@ class AddPlaceFragment : Fragment(R.layout.fragment_add_place) {
             buttonApply = findViewById(R.id.buttonApply)
             buttonBack = findViewById(R.id.buttonBack)
             buttonAddPhoto = findViewById(R.id.buttonAddPhoto)
-
             databasePlaceRepository = DatabasePlaceRepository(context)
             ioScope = CoroutineScope(Dispatchers.IO + Job())
-
             buttonBack.setOnClickListener { returnToPlaceListFragment() }
             buttonApply.setOnClickListener { addingPlaceToDatabaseAndReturnToPlacesListFragment() }
-
             createDirectory(context)
             buttonAddPhoto.setOnClickListener {
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
@@ -71,41 +66,32 @@ class AddPlaceFragment : Fragment(R.layout.fragment_add_place) {
             }
         }
     }
-
     override fun onResume() {
         super.onResume()
         if (newPhotoLoaded) {
             noPhotoText.isVisible = !newPhotoLoaded
         }
-
     }
-
     override fun onStart() {
         super.onStart()
         (activity as AppCompatActivity).supportActionBar?.hide()
     }
-
     override fun onStop() {
         super.onStop()
         (activity as AppCompatActivity).supportActionBar?.show()
     }
-
     private fun addingPlaceToDatabaseAndReturnToPlacesListFragment() {
         val placeName = placeNameText.text.toString()
         val locality = localityText.text.toString()
         val fishingType = fishingTypeText.text.toString()
         val fishSpecies = fishSpeciesText.text.toString()
-
         photoPath = if (newPhotoLoaded) currentPhotoPath else null
-
         ioScope.launch {
             if (placeName.isNotEmpty() && locality.isNotEmpty() && fishingType.isNotEmpty() && fishSpecies.isNotEmpty()) {
                 val place = PlaceItem(placeName, locality, fishingType, fishSpecies, photoPath)
-
                 try {
                     databasePlaceRepository.addPlace(place)
                     returnToPlaceListFragment()
-
                 } catch (e: Exception) {
                     Snackbar.make(buttonApply, R.string.place_already_exists, Snackbar.LENGTH_SHORT).show()
                 }
@@ -114,7 +100,6 @@ class AddPlaceFragment : Fragment(R.layout.fragment_add_place) {
             }
         }
     }
-
     private fun returnToPlaceListFragment() {
         parentFragmentManager.commit {
             setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
@@ -123,7 +108,6 @@ class AddPlaceFragment : Fragment(R.layout.fragment_add_place) {
             replace(R.id.mainContainer, PlaceListFragment())
         }
     }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         data?.extras?.get("data").run {
@@ -131,6 +115,5 @@ class AddPlaceFragment : Fragment(R.layout.fragment_add_place) {
             newPhotoLoaded = true
         }
     }
-
 }
 
